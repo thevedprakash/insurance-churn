@@ -212,7 +212,7 @@ https://insurance-churn-nbis7ncpsa-uc.a.run.app/
   ![Download](img/InferenceWithDownloadOption.png)
 
 - Step 3 : You can see score on the page as well scroll to right to see churn score and churn label
-  ![Download](img/InferenceWithDownloadOption.png)
+  ![Download](img/ChurnLabelAndChurnScore.png)
 
 Next Repo will Implement the Intevention menthod using GenAI chatbot, after passing through business logic which I have left at viewer discretion.
 
