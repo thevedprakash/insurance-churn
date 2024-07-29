@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation Errors</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='auth_styles.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Validation Errors</h1>
+        <div class="validation-errors">
+            <ul>
+                {% for error in validation_errors %}
+                <li>{{ error }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <a href="{{ url_for('upload') }}" class="button">Return to Main Page</a>
+        <a href="{{ url_for('process_file', filename=filename) }}" class="button">Apply Preprocessing and Proceed</a>
+    </div>
+</body>
+
+</html>
